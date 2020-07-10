@@ -2,12 +2,14 @@
 
 setxkbmap -layout gb &
 xsetroot -cursor_name left_ptr &
-xrdb ~/.Xresources
+xrdb ~/.Xresources &
+lxpolkit &
 sxhkd &
-urxvtd --quiet --opendisplay --fork
-feh --bg-scale /home/ross/Pictures/Wallpapers/mountains.jpg &
+#urxvtd --quiet --opendisplay --fork
+feh --bg-scale /usr/share/backgrounds/Blue_frost_by_ppaabblloo77.jpg &
 picom -b &
 polybar main &
+protonmail-bridge-bin --no-window &
 /home/ross/.local/share/tresorit/tresorit --hidden &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
